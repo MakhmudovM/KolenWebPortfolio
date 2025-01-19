@@ -10,13 +10,11 @@ function Home() {
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'black',
         color: 'white',
         height: '100vh',
         margin: 0,
-        boxSizing: 'border-box',
         padding: 0,
-        overflow: 'hidden',
+        overflow: 'hidden', // Запрещаем прокрутку
       }}
     >
       {/* Верхний текст */}
