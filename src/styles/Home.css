@@ -1,0 +1,43 @@
+/* Контейнер для страницы Home */
+.home-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Убираем прокрутку */
+  }
+  
+  /* Скрытие скроллбара только в Home */
+  .home-container::-webkit-scrollbar {
+    width: 0;
+  }
+  
+  .home-title {
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .home-subtitle {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 0;
+  }
+  
+  .home-icons {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  .home-icon {
+    margin: 0 15px;
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+  }
+  

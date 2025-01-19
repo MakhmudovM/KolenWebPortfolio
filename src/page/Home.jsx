@@ -1,27 +1,16 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import '../styles/Home.css'; // Подключаем файл стилей
 
 function Home() {
   return (
-    <div
-      style={{
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        color: 'white',
-        height: '100vh',
-        margin: 0,
-        padding: 0,
-        overflow: 'hidden', // Запрещаем прокрутку
-      }}
-    >
+    <div className="home-container">
       {/* Верхний текст */}
-      <h1 style={{ fontSize: '4rem', fontWeight: 'bold', margin: 0 }}>Hi, I'm Kolеn</h1>
-      
+      <h1 className="home-title">Hi, I'm Kolеn</h1>
+
       {/* Нижний текст с эффектом печати */}
-      <p style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '20px', marginBottom: 0 }}>
+      <p className="home-subtitle">
         <Typewriter
           words={["I'm a Freelancer", "I'm a Frontend Developer"]}
           loop={Infinity}
@@ -34,12 +23,12 @@ function Home() {
       </p>
 
       {/* Иконки соцсетей */}
-      <div style={{ display: 'flex', marginTop: '20px' }}>
+      <div className="home-icons">
         <a
           href="https://www.linkedin.com/in/muhammadzoir-mahmudov-a14150335/"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ margin: '0 15px', color: 'white', fontSize: '2.5rem' }}
+          className="home-icon"
         >
           <FaLinkedin />
         </a>
@@ -47,13 +36,13 @@ function Home() {
           href="https://github.com/MakhmudovM"
           target="_blank"
           rel="noopener noreferrer"
-          style={{ margin: '0 15px', color: 'white', fontSize: '2.5rem' }}
+          className="home-icon"
         >
           <FaGithub />
         </a>
         <a
-          href="kolenweb@gmail.com"
-          style={{ margin: '0 15px', color: 'white', fontSize: '2.5rem' }}
+          href="mailto:kolenweb@gmail.com"
+          className="home-icon"
         >
           <FaEnvelope />
         </a>
