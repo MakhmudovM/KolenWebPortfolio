@@ -1,6 +1,8 @@
 import React from 'react';
 import { Typewriter } from 'react-simple-typewriter';
 import { FaLinkedin, FaGithub, FaEnvelope } from 'react-icons/fa';
+import { FaTelegram } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 import '../styles/Home.css'; // Подключаем файл стилей
 
 function Home() {
@@ -45,6 +47,21 @@ function Home() {
           className="home-icon"
         >
           <FaEnvelope />
+        </a>
+        <a
+          href="https://t.me/KOLEN_Z"
+          target="_blank"
+          className="home-icon"
+        >
+          <FaTelegram />
+        </a>
+        
+        <a
+          href="https://www.instagram.com/kolen_z/"
+          target="_blank"
+          className="home-icon"
+        >
+          <FaInstagram />
         </a>
       </div>
     </div>
