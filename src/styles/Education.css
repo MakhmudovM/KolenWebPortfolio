@@ -1,0 +1,111 @@
+.education-container {
+    background-color: #121212;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  .education-title {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    color: #ff9800;
+  }
+  
+  .education-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+  }
+  
+  .education-card {
+    background-color: #1e1e1e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 250px;
+    position: relative;
+    z-index: 1; /* Чтобы карточки располагались выше линии */
+  }
+  
+  .education-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+  }
+  
+  .education-card-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .education-card-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 1rem;
+    object-fit: contain;
+  }
+  
+  .education-card-title {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .education-card-subtitle {
+    font-size: 1.2rem;
+    color: #aaa;
+  }
+  
+  .education-card-detail {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: #ddd;
+  }
+  
+  .university-card {
+    order: -1; /* Университет будет сверху */
+  }
+  
+  .school-card {
+    order: 1; /* Школа будет снизу */
+  }
+  
+  /* Линия между карточками */
+  .education-line {
+    width: 5px;
+    background-color: #ff9800; /* Цвет линии */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);  /* Центрирует линию по горизонтали и вертикали */
+    height: 100px;  /* Растягиваем линию */
+    z-index: 0; /* Линия находится за карточками */
+  }
+  
+  /* Респонсив */
+  @media (max-width: 768px) {
+    .education-title {
+      font-size: 1.5rem;
+    }
+  
+    .education-card-title {
+      font-size: 1.2rem;
+    }
+  
+    .education-card-subtitle {
+      font-size: 1rem;
+    }
+  
+    .education-card {
+      width: 200px;
+    }
+  
+    .education-line {
+      height: 60px; /* Уменьшаем высоту линии на мобильных */
+    }
+  }
+  

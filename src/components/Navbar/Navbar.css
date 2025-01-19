@@ -1,0 +1,145 @@
+/* Общий стиль навбара */
+.navbar {
+    width: 100%;
+    background-color: #242424;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+/* Добавляем отступ для основного контента */
+body {
+    margin-top: 60px; /* Учитываем высоту навбара */
+}
+
+.navbar-container {
+    max-width: 1200px; /* Центральное выравнивание содержимого */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+/* Логотип */
+.navbar-logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Ссылки */
+.navbar-links {
+    display: flex;
+    gap: 25px; /* Пространство между ссылками */
+}
+
+.nav-item {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    position: relative;
+    padding: 5px 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: #1e90ff;
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-item:hover::after {
+    width: 50%;
+}
+
+.nav-item.active {
+    color: #1e90ff;
+}
+
+.nav-item.active::after {
+    width: 100%;
+}
+
+/* Переключатель темы */
+.navbar-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.theme-switch input {
+    display: none;
+}
+
+.theme-switch-slider {
+    width: 40px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 34px;
+    position: relative;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.theme-switch-slider::before {
+    content: '';
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    background: white;
+    border-radius: 50%;
+    bottom: 3px;
+    left: 3px;
+    transition: transform 0.3s ease-in-out;
+}
+
+input:checked + .theme-switch-slider {
+    background-color: #1e90ff;
+}
+
+input:checked + .theme-switch-slider::before {
+    transform: translateX(20px);
+}
+
+/* Отступы и адаптивность */
+@media (max-width: 768px) {
+    .navbar-links {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 15px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar-toggle {
+        margin-top: 10px;
+    }
+} 

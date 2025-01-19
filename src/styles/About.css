@@ -1,0 +1,90 @@
+.about-container {
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+  }
+  
+  .about-title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    color: #ff9800;
+  }
+  
+  .about-content {
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+  }
+  
+  .about-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+  }
+  
+  .about-description {
+    margin-top: 1rem;
+  }
+  
+  .about-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 2rem;
+  }
+  
+  .image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 300px; /* Размер для фото */
+    background-color: #607D8B; /* Цвет фона для пустого места */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .about-content {
+      grid-template-columns: 1fr; /* На планшетах и телефонах один столбец */
+    }
+  
+    .about-title {
+      font-size: 2.5rem; /* Меньше размер шрифта */
+    }
+  
+    .about-text {
+      font-size: 1rem; /* Меньше текст на мобильных устройствах */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .about-title {
+      font-size: 2rem; /* Еще меньше для мобильных */
+    }
+  
+    .about-text {
+      font-size: 0.9rem;
+    }
+  
+    .image-placeholder {
+      height: 200px; /* Уменьшаем высоту изображения на мобильных */
+    }
+  }
+  
