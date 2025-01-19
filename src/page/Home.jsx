@@ -25,7 +25,7 @@ function Home() {
       {/* Нижний текст с эффектом печати */}
       <p style={{ fontSize: '2rem', fontWeight: 'bold', marginTop: '20px', marginBottom: 0 }}>
         <Typewriter
-          words={["I'm a Freelancer", "I'm a Developer"]}
+          words={["I'm a Freelancer", "I'm a Frontend Developer"]}
           loop={Infinity}
           cursor
           cursorStyle="|"
