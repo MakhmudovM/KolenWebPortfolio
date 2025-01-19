@@ -15,7 +15,6 @@ function MainLayout() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Outlet />
       </div>
-      <Footer />
     </div>
   );
 }
