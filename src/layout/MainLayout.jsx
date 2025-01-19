@@ -1,7 +1,6 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
 import Navbar from '../components/Navbar/Navbar';
-import Footer from '../components/Footer/Footer';
 import StarryBackground from '../components/StarryBackground'; // Подключаем компонент с фоном
 
 function MainLayout() {
@@ -15,6 +14,7 @@ function MainLayout() {
       <div style={{ position: 'relative', zIndex: 1 }}>
         <Outlet />
       </div>
+      
     </div>
   );
 }
