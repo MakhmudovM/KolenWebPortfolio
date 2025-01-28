@@ -8,7 +8,7 @@ function Education() {
         title: "",
         cardTitle: "Computer Engineering and Artificial Intelligence",
         cardSubtitle: "TATUFF",
-        cardDetailedText: "CGPA - 4.1/5",
+        cardDetailedText: "CGPA - 4.5/5",
         icon: {
           src: "" // Место для иконки (если необходимо добавить)
         }
