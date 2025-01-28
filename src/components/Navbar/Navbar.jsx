@@ -47,12 +47,12 @@ function Navbar() {
         </div>
 
         {/* Переключатель темы */}
-        <div className="navbar-toggle">
+        {/* <div className="navbar-toggle">
           <label className="theme-switch">
             <input type="checkbox" />
             <span className="theme-switch-slider"></span>
           </label>
-        </div>
+        </div> */}
       </div>
     </nav>
   );

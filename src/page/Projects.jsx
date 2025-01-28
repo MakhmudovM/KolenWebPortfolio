@@ -4,97 +4,95 @@ import "../styles/Projects.css"; // Путь к стилям
 const Projects = () => {
   const projects = [
     {
-      title: "Dev Portfolio",
+      title: "Kolen Dev Portfolio",
       description:
-        "- Developer Portfolio Website made in React\n - Fully customizable and dynamic, easily change data and images.\n - Dark Mode Support",
-      image: "images/projects/portfolio-poster.png",
+        "- Developer Portfolio Website made in React\n - Fully customizable and dynamic, easily change data and images.",
+        image: "/image/Projects/portfolio.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/dev-portfolio" },
-        { text: "Live", href: "https://mayankagarwal.me" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/KolenWebPortfolio" },
+        { text: "Live", href: "https://kolen-web-portfolio-mmz.vercel.app/" }
       ],
       tags: ["React", "Portfolio", "JavaScript"]
     },
     {
-      title: "Caaring - Cab Share App",
+      title: "Kolen Kitchen APP",
       description:
-        "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
-      image: "images/projects/caaring-poster.png",
+        "- This website is built with JavaScript and React, using libraries and a database for storage. It serves as a platform for storing and sharing recipes for various dishes.",
+      image: "/image/Projects/kitchen.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/Caaring" },
-        { text: "Live", href: "http://caaring.herokuapp.com" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/12darsimtihon" },
+        { text: "Live", href: "https://my-kitchen-app-3-mmz.vercel.app/" }
       ],
-      tags: ["Python", "Django", "BootStrap", "SendGrid", "Heroku", "Gunicorn", "VIT"]
+      tags: ["React", "Vite", "Tailwind CSS", "Firebase", "Java Script", "NPM", "API"]
     },
     {
-      title: "Quiet Hours App",
+      title: "Audiophile",
       description:
-        "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
-      image: "images/projects/quiet-hours-poster.jpg",
+        "- A website for an audio equipment store built with React and Vite, using styling libraries.",
+      image: "/image/Projects/audiosale.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/QuietHours-Android" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/12darsImtihon-7-oy" } ,
+        { text: "Live", href: "https://audiophile-store-mmz.vercel.app/" }
+        
       ],
-      tags: ["Java", "Android", "Alarm Manager", "VIT"]
+      tags: ["React", "vite", "Tailwind CSS", "API" , "Daisy UI", "Firebase"]
     },
     {
-      title: "Secure Chat App",
+      title: "Designo",
       description:
-        "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-      image: "images/projects/secure-chat-app.jpg",
+        "- This is a multi-page website for a design school built with pure HTML, CSS, and JavaScript.",
+      image: "/image/Projects/designo.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/SecureChatApp" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/exam-work" },
+        { text: "Live", href: "https://exam-work-mmz.vercel.app/index.html" }
       ],
-      tags: ["Java", "Android", "Firebase", "RSA"]
+      tags: ["Java Script", "HTML", "CSS", ]
     },
     {
-      title: "MVVM Sample App",
+      title: "Coffeeroasters",
       description:
-        "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-      image: "images/projects/mvvm-sample-app.jpg",
+        "- This is a multi-page website for a coffee shop built with pure HTML, CSS, and JavaScript. It features a stylish and user-friendly design, showcasing the menu, special offers, and location details. The site also includes a contact form and an interactive gallery to enhance the customer experience.",
+      image: "/image/Projects/coffeRaster.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/mvvm-sample-app" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/CoffeeRasters-home-work-" },
+        { text: "Live", href: "https://coffee-rasters-mmz-home-work.vercel.app/" }
       ],
-      tags: ["Kotlin", "Android", "MVVM", "Room", "Coroutines", "Flow", "Hilt-Dagger", "NetworkBoundResource"]
+      tags: ["Java Script", "HTML", "CSS", ]
     },
     {
-      title: "Feed List App",
+      title: "Ansor Med",
       description:
-        "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-      image: "images/projects/feed-list-app.jpg",
+        "-A short one-page website for a hospital briefly describing its services and contact information.",
+      image: "/image/Projects/AnsorMed.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/Paginated-App-Feeds-List" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/Ansor-Med" },
+        { text: "Live", href: "https://ansor-med-henna-mmz.vercel.app/" }
       ],
-      tags: ["Kotlin", "Android", "MVVM", "Paging 3", "Coroutines", "Flow"]
+      tags: [ "HTML", "CSS", ]
     },
     {
-      title: "Task Tracker",
+      title: "Random Gradient web",
       description:
-        "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-      image: "images/projects/task-tracker.jpg",
+        "- A website for randomly generating beautiful color gradients for various uses, built with JavaScript. The generated gradients dynamically affect the site's style as the background.",
+      image: "/image/Projects/gradient.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/task-tracker-app" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/linear-gradient" },
+        { text: "Live", href: "https://linear-gradient-mmz.vercel.app/" }
       ],
-      tags: ["TypeScript", "Angular 12", "JavaScript"]
-    },
-    {
-      title: "Image Encryption/Decryption",
-      description:
-        "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-      image: "images/projects/image-encryption.jpg",
-      links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/img-encrypt-sdes" }
-      ],
-      tags: ["Python", "Django", "SDES", "Cryptography"]
+      tags: ["Java Script", "HTML", "CSS", ]
     },
     {
       title: "Weather App",
       description:
         "- A weather app that fetches data from the **OpenWeather API** to show current weather.\n - Designed with **React** and **Material-UI**.",
-      image: "images/projects/weather-app.jpg",
+        image: "/image/Projects/Weather-App.jpg",
       links: [
-        { text: "GitHub", href: "https://github.com/mayankagarwal09/weather-app" }
+        { text: "GitHub", href: "https://github.com/MakhmudovM/wather-app" },
+        { text: "Live", href: "https://wather-app-mmz.vercel.app/" }
       ],
       tags: ["React", "API", "JavaScript"]
-    }
+    },
+    
   ];
 
   const [showMore, setShowMore] = useState(false);
