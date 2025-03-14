@@ -15,6 +15,17 @@ const Projects = () => {
       tags: ["React", "Portfolio", "JavaScript"]
     },
     {
+      title: "Sushito restaurant",
+      description:
+        "- Japanese style restaurant focused on sushi preparation. The project integrates such functions as a database of dishes and food orders, and a telegram bot is also included.",
+        image: "/image/Projects/sushito.jpg",
+      links: [
+        { text: "GitHub", href: "https://github.com/MakhmudovM/sushito" },
+        { text: "Live", href: "https://sushito-mmz.vercel.app/" }
+      ],
+      tags: ["React", "TypeScript", "API", "Firebase", "Python", "TailWind", ]
+    },
+    {
       title: "Kolen Kitchen APP",
       description:
         "- This website is built with JavaScript and React, using libraries and a database for storage. It serves as a platform for storing and sharing recipes for various dishes.",
