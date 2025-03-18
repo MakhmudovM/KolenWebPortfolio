@@ -26,6 +26,18 @@ const Projects = () => {
       tags: ["React", "TypeScript", "API", "Firebase", "Python", "TailWind", ]
     },
     {
+      title: "Loft Cafe",
+      description:
+        "- LOFT Cafe Fergana is a stylish and cozy café in the heart of Fergana, offering a unique blend of gourmet cuisine and an industrial loft-style interior. The café features exposed brick walls, high ceilings, and natural wood and metal accents, creating a warm and inviting atmosphere.",
+        image: "/image/Projects/loftCafe.png",
+      links: [
+        { text: "Live", href: "https://loft-cafe-mmz.vercel.app/" }
+      ],
+      tags: ["React","TailWind","Vite", "Java Script" ]
+
+      
+    },
+    {
       title: "Kolen Kitchen APP",
       description:
         "- This website is built with JavaScript and React, using libraries and a database for storage. It serves as a platform for storing and sharing recipes for various dishes.",
